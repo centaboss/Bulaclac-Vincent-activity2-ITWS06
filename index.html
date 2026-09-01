@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity: Unstyled DOM Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- SITE HEADER / NAVIGATION -->
+    <header id="site-header">
+        <div class="brand-logo">DevPulse Academy</div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#enroll" class="nav-cta">Enroll Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <span class="badge">Fall 2026 Admissions Open</span>
+        <h1 class="hero-title">Master the Art of Web Architecture & Digital Media</h1>
+        <p class="hero-description">Gain hands-on expertise in modern front-end engineering, UI/UX systems, and production-grade software development through industry-aligned coursework.</p>
+        <div class="hero-actions">
+            <a href="#enroll" class="btn-primary">Explore Programs</a>
+            <a href="#curriculum" class="btn-secondary">View Curriculum</a>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT AREA -->
+    <main id="main-content">
+        
+        <!-- FEATURED COURSES SECTION -->
+        <section id="courses">
+            <h2 class="section-title">Featured Academic Track</h2>
+            <p class="section-subtitle">Comprehensive courses designed to take you from foundational syntax to cloud-ready applications.</p>
+            
+            <div class="card-grid">
+                <!-- Course Card 1 -->
+                <article class="course-card">
+                    <span class="category">Design Systems</span>
+                    <h3 class="card-title">Visual Hierarchy & Web Layouts</h3>
+                    <p class="card-text">Learn how to manipulate white space, typography, color contrast, and scanning patterns to build intuitive web interfaces.</p>
+                    <div class="card-meta">
+                        <span class="duration">8 Weeks</span>
+                        <span class="level">Intermediate</span>
+                    </div>
+                    <a href="#" class="card-link">Course Details &rarr;</a>
+                </article>
+
+                <!-- Course Card 2 -->
+                <article class="course-card">
+                    <span class="category">Engineering</span>
+                    <h3 class="card-title">Full-Stack Web Architecture</h3>
+                    <p class="card-text">Master model-view-controller patterns, API integration, security protocols, and scalable database schema design.</p>
+                    <div class="card-meta">
+                        <span class="duration">12 Weeks</span>
+                        <span class="level">Advanced</span>
+                    </div>
+                    <a href="#" class="card-link">Course Details &rarr;</a>
+                </article>
+
+                <!-- Course Card 3 -->
+                <article class="course-card">
+                    <span class="category">Systems</span>
+                    <h3 class="card-title">Browser Engines & Performance</h3>
+                    <p class="card-text">Explore compilation pipelines, DOM tree execution, memory optimization, and low-level web rendering dynamics.</p>
+                    <div class="card-meta">
+                        <span class="duration">10 Weeks</span>
+                        <span class="level">Advanced</span>
+                    </div>
+                    <a href="#" class="card-link">Course Details &rarr;</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- ANNOUNCEMENT / SIDEBAR CONTENT -->
+        <aside id="announcements">
+            <h3>Upcoming Campus Events</h3>
+            <ul>
+                <li>
+                    <strong>Sep 15:</strong> Web Performance Optimization Seminar
+                </li>
+                <li>
+                    <strong>Oct 02:</strong> UI/UX Portfolio Review Workshop
+                </li>
+                <li>
+                    <strong>Oct 20:</strong> Annual Student Hackathon
+                </li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="site-footer">
+        <p>&copy; 2026 DevPulse Academy. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Support</a></li>
+        </ul>
+    </footer>
+
+    <!-- DOCUMENTATION & REFLECTION SECTION (STUDENTS FILL THIS OUT) -->
+    <section id="student-documentation" style="margin-top: 50px; border-top: 2px dashed #ccc; padding-top: 20px;">
+        <h2>Student Visual Hierarchy Documentation</h2>
+        <p>Document the specific CSS strategies you implemented for at least 5 elements to establish visual hierarchy.</p>
+
+        <table border="1" cellpadding="8" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th style="width: 20%;">Target Element / Class</th>
+                    <th style="width: 25%;">Hierarchy Principles Applied</th>
+                    <th style="width: 55%;">Implementation Details & Design Rationale</th>
+                </tr>
+            </thead>
+            <tbody>
+
+    <!-- STUDENT ITEM 1 -->
+    <tr>
+        <td><code>.hero-title</code></td>
+        <td>Size &amp; Scale, Color &amp; Contrast</td>
+        <td>
+            Set to 52px bold with a -0.5px letter-spacing, making it the largest text on the page. Placed inside a dark gradient hero section (#1a1a2e to #0f3460) with white text, creating maximum contrast so it commands immediate attention as the primary focal point.
+        </td>
+    </tr>
+
+    <!-- STUDENT ITEM 2 -->
+    <tr>
+        <td><code>.btn-primary / .nav-cta</code></td>
+        <td>Color &amp; Contrast</td>
+        <td>
+            Applied a high-saturation red (#c0392b) to the primary call-to-action buttons against the dark hero background and dark header. This red carries the highest visual weight on the page, drawing the eye to the most critical interactive elements. The secondary button uses a transparent background with a subtle white border to recede in importance.
+        </td>
+    </tr>
+
+    <!-- STUDENT ITEM 3 -->
+    <tr>
+        <td><code>#hero</code></td>
+        <td>Negative Space, Reading Patterns</td>
+        <td>
+            Given 100px top and 90px bottom padding to create generous breathing room that frames the hero content. The centered layout with a large gap (40px) between description and buttons guides the eye in a Z-pattern from the badge at top-left, across the title, down through the description, and toward the action buttons.
+        </td>
+    </tr>
+
+    <!-- STUDENT ITEM 4 -->
+    <tr>
+        <td><code>.card-grid / .course-card</code></td>
+        <td>Alignment &amp; Grids, Proximity &amp; Grouping</td>
+        <td>
+            Used display: grid with grid-template-columns: repeat(3, 1fr) and gap: 30px to create a three-column aligned layout. Each card uses flexbox with flex-direction: column and consistent 32px/28px padding to group the category badge, title, description, metadata, and link into a cohesive unit. The 30px gap separates unrelated cards while keeping related content within each card tightly grouped.
+        </td>
+    </tr>
+
+    <!-- STUDENT ITEM 5 -->
+    <tr>
+        <td><code>#announcements</code></td>
+        <td>Proximity &amp; Grouping, Typography Hierarchy</td>
+        <td>
+            Styled with a dark (#1a1a2e) background that visually groups all event items together. Each list item uses a 3px left border in red to create a visual timeline. The heading uses a gold color (#e8d5b7) at 22px bold while body text is 15px in muted gray (#c8c8d4), establishing a clear two-level typographic hierarchy within the component.
+        </td>
+    </tr>
+
+    <!-- STUDENT ITEM 6 -->
+    <tr>
+        <td><code>* (universal selector)</code></td>
+        <td>Typography Hierarchy</td>
+        <td>
+            Applied Garamond serif font across all elements using the universal selector to establish a consistent typographic identity. Combined with clear size progression — hero title at 52px, section titles at 36px, card titles at 21px, body text at 15px, and meta labels at 12px — this creates a five-level typographic hierarchy that clearly distinguishes content importance.
+        </td>
+    </tr>
+
+    <!-- STUDENT ITEM 7 -->
+    <tr>
+        <td><code>#site-header (sticky)</code></td>
+        <td>Reading Patterns, Color &amp; Contrast</td>
+        <td>
+            Made the header sticky with position: sticky and z-index: 100 so it stays visible during scrolling. The dark background (#1a1a2e) with a box-shadow creates depth separation from the content below. Flexbox with justify-content: space-between places the brand logo on the far left and navigation on the far right, establishing the starting point of the Z-pattern reading flow.
+        </td>
+    </tr>
+
+</tbody>
+        </table>
+    </section>
+
+</body>
+</html>
