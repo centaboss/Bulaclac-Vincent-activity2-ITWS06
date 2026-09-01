@@ -1,8 +1,4 @@
-/* ============================================
-   DevPulse Academy – Visual Hierarchy Styles
-   ============================================ */
 
-/* ---------- RESET & BASE ---------- */
 * {
     margin: 0;
     padding: 0;
@@ -29,11 +25,7 @@ ul {
     list-style: none;
 }
 
-/* ============================================
-   1. SITE HEADER / NAVIGATION
-   Principles: Reading Patterns (Z-pattern start),
-   Color & Contrast, Proximity & Grouping
-   ============================================ */
+
 #site-header {
     display: flex;
     justify-content: space-between;
@@ -92,11 +84,7 @@ ul {
     transform: translateY(-1px);
 }
 
-/* ============================================
-   2. HERO SECTION
-   Principles: Size & Scale, Color & Contrast,
-   Negative Space, Reading Patterns (Z-pattern)
-   ============================================ */
+
 #hero {
     background: linear-gradient(160deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
     color: #ffffff;
@@ -212,20 +200,14 @@ ul {
     transform: translateY(-2px);
 }
 
-/* ============================================
-   3. MAIN CONTENT AREA
-   Principles: Alignment & Grids, Negative Space
-   ============================================ */
+
 #main-content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 70px 40px;
 }
 
-/* ============================================
-   4. COURSES SECTION
-   Principles: Typography Hierarchy, Proximity
-   ============================================ */
+
 #courses {
     margin-bottom: 60px;
 }
@@ -260,11 +242,7 @@ ul {
     line-height: 1.7;
 }
 
-/* ============================================
-   5. CARD GRID & CARDS
-   Principles: Alignment & Grids, Proximity,
-   Color & Contrast, Negative Space
-   ============================================ */
+
 .card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -365,11 +343,6 @@ ul {
     letter-spacing: 1px;
 }
 
-/* ============================================
-   6. ANNOUNCEMENTS SIDEBAR
-   Principles: Proximity, Color & Contrast,
-   Typography Hierarchy
-   ============================================ */
 #announcements {
     background-color: #1a1a2e;
     color: #ffffff;
@@ -407,11 +380,7 @@ ul {
     margin-right: 6px;
 }
 
-/* ============================================
-   7. FOOTER
-   Principles: Reading Patterns (Z-pattern end),
-   Negative Space, Color & Contrast
-   ============================================ */
+
 #site-footer {
     background-color: #1a1a2e;
     color: #8888a0;
@@ -444,10 +413,6 @@ ul {
     color: #e8d5b7;
 }
 
-/* ============================================
-   8. DOCUMENTATION SECTION
-   Styled to look clean but distinct
-   ============================================ */
 #student-documentation {
     max-width: 1200px;
     margin: 0 auto;
@@ -520,9 +485,7 @@ ul {
     font-family: "Courier New", monospace;
 }
 
-/* ============================================
-   9. RESPONSIVE ADJUSTMENTS
-   ============================================ */
+
 @media (max-width: 900px) {
     .card-grid {
         grid-template-columns: repeat(2, 1fr);
